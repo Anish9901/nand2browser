@@ -1,2 +1,8 @@
 [0,1]*
 demo
+hwsim
+nand2tetris/
+*.tst
+*.out
+*.cmp
+.*
