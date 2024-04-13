@@ -10,14 +10,14 @@ CHIP Xor {
     OUT out;
 
     PARTS:
-    // not of a
-    Nand(a = a, b = a, out = o1);
-    // nand of not(a), b
-    Nand(a = o1, b = b, out = o2);
-    // not of b
-    Nand(a = b, b = b, out = o4);
-    // nand of a, not(b)
-    Nand(a = a, b = o4, out = o5);
-    // nand of o2 and o5 which is equivalent to (not(a) and b) or (a and not(b))
-    Nand(a = o2, b = o5, out = out);
+        // not of a
+        Nand(a = a, b = a, out = o1);
+        // nand of not(a), b
+        Nand(a = o1, b = b, out = o2);
+        // not of b
+        Nand(a = b, b = b, out = o4);
+        // nand of a, not(b)
+        Nand(a = a, b = o4, out = o5);
+        // nand of o2 and o5 which is equivalent to (not(a) and b) or (a and not(b))
+        Nand(a = o2, b = o5, out = out);
 }
